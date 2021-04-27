@@ -1,0 +1,30 @@
+{
+  "name": "Tag",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "article",
+      "otherEntityRelationshipName": "tags",
+      "relationshipName": "articles",
+      "ownerSide": false
+    }
+  ],
+  "javadoc": "Tag entity.\\n@author Boubziz Nassim.",
+  "entityTableName": "tag",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210427145027"
+}

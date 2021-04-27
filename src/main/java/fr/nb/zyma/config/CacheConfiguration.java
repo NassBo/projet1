@@ -48,6 +48,14 @@ public class CacheConfiguration {
             createCache(cm, fr.nb.zyma.domain.User.class.getName());
             createCache(cm, fr.nb.zyma.domain.Authority.class.getName());
             createCache(cm, fr.nb.zyma.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.nb.zyma.domain.ApplicationUser.class.getName());
+            createCache(cm, fr.nb.zyma.domain.ApplicationUser.class.getName() + ".articles");
+            createCache(cm, fr.nb.zyma.domain.ApplicationUser.class.getName() + ".friends");
+            createCache(cm, fr.nb.zyma.domain.ApplicationUser.class.getName() + ".followers");
+            createCache(cm, fr.nb.zyma.domain.Article.class.getName());
+            createCache(cm, fr.nb.zyma.domain.Article.class.getName() + ".tags");
+            createCache(cm, fr.nb.zyma.domain.Tag.class.getName());
+            createCache(cm, fr.nb.zyma.domain.Tag.class.getName() + ".articles");
             // jhipster-needle-ehcache-add-entry
         };
     }
